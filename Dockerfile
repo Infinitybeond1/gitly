@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN apt update && apt install libsqlite3-dev
+RUN apt update -y && apt install libsqlite3-dev -y
 
 RUN v install markdown && v .
 
